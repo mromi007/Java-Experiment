@@ -1,0 +1,46 @@
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+public class exp2 {
+
+	public static void main(String[] args) {
+		final Frame fr = new Frame();
+        fr.setVisible(true);
+        fr.setSize(400,400);
+        fr.setLayout(null);
+        Label l = new Label("Hello");
+        l.setBounds(50,50,50,50);
+        fr.add(l);
+        fr.addMouseListener(new MouseListener() {
+			
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				fr.setBackground(Color.green);
+			}
+			
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				fr.setBackground(Color.blue);
+			}
+			
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				fr.setVisible(false);
+			}
+			
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				fr.setBackground(Color.pink);
+			}
+			
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+			
+			};
+        });
+        	
+        }
+	}

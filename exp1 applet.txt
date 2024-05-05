@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 
 public class exp1 extends Applet implements KeyListener{
-	String msg = "King Kong";
+	String msg = "Hello World";
 	public void paint(Graphics g){
 		g.drawString(msg,50,50);
 	}
@@ -37,12 +37,11 @@ public class exp1 extends Applet implements KeyListener{
 	}
 
 	public void keyReleased(KeyEvent arg0) {
-		// TODO Auto-generated method stub
 		showStatus("key is relesed");
 	}
 
 	public void keyTyped(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+		showStatus("Key Typed");
 		
 	}
 }
